@@ -8,6 +8,7 @@ RSpec.describe 'Items API' do
   let(:id) { items.first.id }
 
   # Test suite for GET /todos/:todo_id/items
+  # items#index
   describe 'GET /todos/:todo_id/items' do
     before { get "/todos/#{todo_id}/items" }
 
@@ -35,6 +36,7 @@ RSpec.describe 'Items API' do
   end
 
   # Test suite for GET /todos/:todo_id/items/:id
+  # items#show
   describe 'GET /todos/:todo_id/items/:id' do
     before { get "/todos/#{todo_id}/items/#{id}" }
 

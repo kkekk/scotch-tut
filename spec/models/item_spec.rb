@@ -6,5 +6,4 @@ RSpec.describe Item, type: :model do
 
   # Validation
   it { should validate_presence_of :name }
-  it { should validate_presence_of :done }
 end
