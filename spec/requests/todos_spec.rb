@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Todos API', type: :request do
   # initialize test data
-  # using let! forces invocation of list
+  # using let! forces invocation of block, normally it is lazy loaded
   let!(:todos) { create_list(:todo, 10) }
   let(:todo_id) { todos.first.id }
 
